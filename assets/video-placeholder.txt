@@ -1,0 +1,20 @@
+VIDEO PLACEHOLDER
+
+Please add your CNC woodworking video here as "cnc-woodworking.mp4"
+
+Requirements:
+- Filename: cnc-woodworking.mp4
+- Content: CNC machine carving/cutting wood
+- Duration: 10-30 seconds (seamless loop)
+- Resolution: 1920x1080 or higher
+- Format: MP4 (H.264)
+- Size: Under 10MB recommended
+
+The website will work without the video using a fallback background.
+
+For free stock videos, check:
+- Pexels.com
+- Pixabay.com
+- Unsplash.com
+
+Search terms: "CNC woodworking", "wood cutting machine", "woodworking CNC"
