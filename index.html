@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrvoArt.bih - Handcrafted Oak Products</title>
+    <meta name="description" content="Premium handcrafted oak wood products by DrvoArt.bih - Artisanal woodworking with modern precision">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>DrvoArt.bih</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/cnc-woodworking.mp4" type="video/mp4">
+                <!-- Fallback image if video doesn't load -->
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">DrvoArt.bih</h1>
+            <p class="hero-subtitle">Handcrafted Excellence in Oak</p>
+            <p class="hero-description">Where traditional craftsmanship meets modern precision</p>
+            <a href="#products" class="cta-button">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Crafted with Passion</h2>
+                    <p>At DrvoArt.bih, we blend traditional woodworking techniques with modern CNC precision to create exceptional oak products. Each piece tells a story of dedication, skill, and respect for the natural beauty of wood.</p>
+                    <p>Our commitment to quality ensures that every product not only meets but exceeds expectations, delivering pieces that will be treasured for generations.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Products Crafted</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Oak Wood</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card" data-product="bowl">
+                    <div class="product-3d" id="bowl-3d"></div>
+                    <div class="product-info">
+                        <h3>Oak Bowl</h3>
+                        <p class="product-description">Handcrafted dining bowl with natural oak grain</p>
+                        <div class="product-dimensions">
+                            <span>Diameter: 25cm</span>
+                            <span>Height: 8cm</span>
+                        </div>
+                        <button class="view-product-btn" data-product="bowl">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="cutting-board">
+                    <div class="product-3d" id="cutting-board-3d"></div>
+                    <div class="product-info">
+                        <h3>Cutting Board</h3>
+                        <p class="product-description">Premium oak cutting board for kitchen excellence</p>
+                        <div class="product-dimensions">
+                            <span>Length: 40cm</span>
+                            <span>Width: 25cm</span>
+                            <span>Thickness: 3cm</span>
+                        </div>
+                        <button class="view-product-btn" data-product="cutting-board">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="vase">
+                    <div class="product-3d" id="vase-3d"></div>
+                    <div class="product-info">
+                        <h3>Oak Vase</h3>
+                        <p class="product-description">Elegant decorative vase showcasing oak's natural beauty</p>
+                        <div class="product-dimensions">
+                            <span>Diameter: 15cm</span>
+                            <span>Height: 30cm</span>
+                        </div>
+                        <button class="view-product-btn" data-product="vase">View Details</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="tray">
+                    <div class="product-3d" id="tray-3d"></div>
+                    <div class="product-info">
+                        <h3>Serving Tray</h3>
+                        <p class="product-description">Sophisticated tray perfect for entertaining</p>
+                        <div class="product-dimensions">
+                            <span>Length: 45cm</span>
+                            <span>Width: 30cm</span>
+                            <span>Height: 5cm</span>
+                        </div>
+                        <button class="view-product-btn" data-product="tray">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="kontakt">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="kontakt-content">
+                <div class="kontakt-info">
+                    <div class="kontakt-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:info@drvoart.bih">info@drvoart.bih</a>
+                        </div>
+                    </div>
+                    <div class="kontakt-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h3>Instagram</h3>
+                            <a href="https://instagram.com/drvoart.bih" target="_blank">@drvoart.bih</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="kontakt-form">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-3d" id="modal-3d-container"></div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="modal-specs">
+                        <h3>Specifications</h3>
+                        <div id="modal-dimensions"></div>
+                        <div class="modal-features">
+                            <h4>Features</h4>
+                            <ul id="modal-features-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
